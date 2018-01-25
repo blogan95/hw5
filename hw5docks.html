@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HomePage</title>
+    <style>
+        body {
+            background-color: #d9bea1;
+        }
+        #top {
+            text-align: center;
+            background-image: url("/white_tiles.png");
+            background-color: /* #a65972*/ #786048;
+            border: 1px solid;
+            width: 100%;
+        }
+        h1 {
+            text-shadow: 2px 2px 2px #474744;
+            color: #d9bea1;
+            text-transform: uppercase;
+        
+        }
+        h3{text-transform: uppercase;
+
+        }
+        .moo {z-index:30;
+              position: absolute;
+              left: 78%;
+              top: 35px;
+        }
+        nav { 
+            border: 1px solid white;
+            overflow: hidden;
+            display: inline;
+            padding-top: 5px;
+            padding: 10px;
+        }
+            nav a {
+                padding: 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: white;
+            }
+            nav a:hover {
+                text-shadow: 2px 2px 2px #262625;
+            }
+
+        .cir{
+            width:250px ;
+            height:219px ;
+            border-radius: 50%;
+            
+        }
+        .col2, .col3 {
+            width: 33.33%;
+            float: left;
+            margin: 20px;
+            border: 1px solid;
+            border-radius: 10px;
+            padding: 10px 15px 12px 12px;
+            background-color: #a9aeb2;
+            text-align: justify;
+            box-shadow: 5px 5px 5px #333331;
+            color: #483F36;
+        }
+        .col1 {
+            width: 250px;
+            float: left;
+            margin: 10px;
+            border: 1px dotted;
+            border-radius: 10px;
+            padding: 12px;
+            background-color: azure;
+            justify-content: center;
+        }
+            .col1 p {
+
+                font-size: 12px;
+                text-indent: 13px;
+                text-align: justify;
+            }
+
+        .col2, .col3 p {
+            text-indent: 15px;
+        }
+      .right {float: left;
+      }
+        .left {
+               text-align: left;
+               clear:both;
+        }
+    .col2 fieldset {margin: 0px 5px 0px 0px}
+        
+    </style>
+    
+</head>
+<body>
+    <!--top-->
+    <div id="top">
+        <h1>Welcome</h1> 
+
+        <img class="moo" src="moop.png" />
+    </div>
+    <br/>
+    <nav>
+            <a href="">home</a>
+            <a href="">about</a>
+            <a href="">contact</a>
+            <a href="">new</a>
+    </nav>
+    <br/>
+    <br/>
+    
+
+        <!--COLUMN 1-->
+        <div class="col1">
+            <img class="cir" src="metbh.jpg" />
+            <h2>Brooklin Logan</h2>
+            <p>
+                I was born and raised in Cleveland, Ohio. I was accepted to go to high school at Cleveland School of the Arts, first as a theatre major and then as a creative writing major. When I graduated in 2013, I started my next fall semester as a freshman at Kent State University, where I majored in Teaching English as a Second Language (TESL) and minored in Japanese and in Education. The summer after my fourth year, I was able to study abroad at Nihon University in Tokyo, Japan.
+            </p>
+                <p>Currently, I am participating in the Cleveland Codes program with Cuyahoga Community College to become a software developer.
+            </p>
+            <ul>
+                    Cleveland, OH
+            </ul>
+        </div>
+
+        <div id="row">
+            <!--COLUMN2-->
+            <div class="col2">
+                <h3>goals</h3>
+                <p>
+                    I have always considered myself to be ambitious. Since I was twelve years old, my dream had been to visit Japan. Now that I have acheived that, I know that anything is possible.
+                </p>
+                <p>
+                    In the next five years, I would like to get more involved in the community and help the younger generation in my city. I hope to go back to college and finish my bachelor's and get a job as a developer. Now that I am learning more about code, I hope to put more work into my personal project, which will be a branching narrative, visual novel style game that I have been tinkering with for awhile.
+                </p>
+                <h3>Contact</h3>
+               
+                    <fieldset><form action="get">
+
+                        <p>
+                            <div class="left">From Name:</div>
+                            <div class="right"><input type="text" name="frname" /></div>
+                        </p>
+                        <p>
+                            <div class="left">
+                                From Email:
+                            </div>
+                            <div class="right"><input type="text" name="fremail" /></div>
+</p>
+                        <p>
+                            <div class="left">
+                                CC:
+                            </div>
+                            <div class="right"><input type="text" name="cc" /></div>
+</p>
+                        <p>
+                            <div class="left">
+                                Subject:
+                            </div>
+                            <div class="right"><input type="text" name="sub" /></div>
+</p><br />
+                 <div class="left">
+                             Message: 
+                               </div>
+                            <div class="right"><textarea name="message" rows="10" cols="55"></textarea></div>
+
+                        <br /><br />
+                        <form action="get">
+                            <input type="image" src="/web/done.png" />
+                        </form>
+                    </form>
+                </fieldset>
+
+            </div>
+
+            <!--COLUMN3-->
+            <div class="col3">
+                <h3>interests</h3>
+                <p>
+                    I have always been interested in learning languages. My love of language stretches to literature as well as learning new phonetics and cultures. <br /><br/>
+                    Some of my other interests include:
+                </p>
+                <ul>
+                    <li>Music</li>
+                    <li>Dance</li>
+                    <li>Korean Dramas</li>
+                    <li>Writing</li>
+                    <li>Philosophy</li>
+                    <li>Self Improvement</li>
+
+                </ul>
+                <h3></h3>
+            </div>
+        </div>
+</body>
+</html>
